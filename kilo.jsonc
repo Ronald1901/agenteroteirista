@@ -1,0 +1,72 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  // Credenciais/Base URL ficam no provider GLOBAL `qwen` já configurado pelo usuário no Kilo.
+  "provider": {
+    "qwen": {
+      "models": {
+        "qwen3.7-max-2026-06-08": {
+          "name": "Qwen3.7 Max 2026-06-08 — Orchestrator",
+          "tool_call": true,
+          "reasoning": true,
+          "temperature": true,
+          "limit": { "context": 1000000, "input": 991000, "output": 32768 },
+          "options": { "thinking": { "type": "enabled", "budgetTokens": 12288 } }
+        },
+        "qwen3.7-max": {
+          "name": "Qwen3.7 Max — DNA + B Decompiler",
+          "tool_call": true,
+          "reasoning": true,
+          "temperature": true,
+          "limit": { "context": 1000000, "input": 991000, "output": 32768 },
+          "options": { "thinking": { "type": "enabled", "budgetTokens": 16384 } }
+        },
+        "qwen3.7-max-2026-05-20": {
+          "name": "Qwen3.7 Max 2026-05-20 — Auto Failover",
+          "tool_call": true, "reasoning": true, "temperature": true,
+          "limit": { "context": 1000000, "input": 991000, "output": 32768 },
+          "options": { "thinking": { "type": "enabled", "budgetTokens": 16384 } }
+        },
+        "qwen3.7-max-2026-05-17": {
+          "name": "Qwen3.7 Max 2026-05-17 — Auto Failover",
+          "tool_call": true, "reasoning": true, "temperature": true,
+          "limit": { "context": 1000000, "input": 991000, "output": 32768 },
+          "options": { "thinking": { "type": "enabled", "budgetTokens": 16384 } }
+        },
+        "qwen3.7-max-preview": {
+          "name": "Qwen3.7 Max Preview — Auto Failover",
+          "tool_call": true, "reasoning": true, "temperature": true,
+          "limit": { "context": 1000000, "input": 991000, "output": 32768 },
+          "options": { "thinking": { "type": "enabled", "budgetTokens": 16384 } }
+        },
+        "qwen3.6-max-preview": {
+          "name": "Qwen3.6 Max Preview — Last Resort Failover",
+          "tool_call": true, "reasoning": true, "temperature": true,
+          "limit": { "context": 262144, "input": 245760, "output": 65536 },
+          "options": { "thinking": { "type": "enabled", "budgetTokens": 16384 } }
+        },
+        "qwen3.8-max": {
+          "name": "Qwen3.8 Max — Rewriter",
+          "tool_call": true,
+          "reasoning": true,
+          "temperature": true,
+          "limit": { "context": 1000000, "input": 991000, "output": 65536 },
+          "options": { "thinking": { "type": "enabled", "budgetTokens": 8192 } }
+        },
+        "deepseek-v4-pro": {
+          "name": "DeepSeek V4 Pro — Objective Critic",
+          "tool_call": true,
+          "reasoning": true,
+          "temperature": true,
+          "limit": { "context": 1000000, "input": 950000, "output": 32768 }
+        },
+        "glm-5.2": {
+          "name": "GLM-5.2 — Release Challenger / Second Opinion",
+          "tool_call": true,
+          "reasoning": true,
+          "temperature": true,
+          "limit": { "context": 1000000, "input": 950000, "output": 32768 }
+        }
+      }
+    }
+  }
+}

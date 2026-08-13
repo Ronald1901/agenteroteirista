@@ -1,0 +1,17 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  // EXEMPLO. Prefira manter sua configuração global já existente no Kilo.
+  // Provider ID DEVE ser `qwen` para este Harness.
+  "provider": {
+    "qwen": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "QwenCloud",
+      "options": {
+        "baseURL": "COLE_A_BASE_URL_DA_SUA_CONTA",
+        "apiKey": "COLE_SUA_API_KEY_AQUI",
+        "timeout": 300000,
+        "chunkTimeout": 30000
+      }
+    }
+  }
+}
